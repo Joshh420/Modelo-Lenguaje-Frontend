@@ -1,11 +1,112 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import '../css/styles.css';
 ---
+<!DOCTYPE html>
+</html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
 
-<Layout>
-	<Welcome />
-</Layout>
+<body>
+  <!-- Navbar estatico -->
+  <nav class="navbar">
+    <div class="logo">Página demo</div>
+    <ul class="nav-links">
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#nosotros">Nosotros</a></li>
+      <li><a href="#tipos">Tipo</a></li>
+      <li><a href="#ventajas">Beneficios</a></li>
+      <li><a href="#proceso">Proceso</a></li>
+    </ul>
+  </nav>
+
+  <!-- Seccion heroe -->
+  <section id="inicio" class="hero">
+    <div class="hero-left fade-in">
+      <p class="subtitle">Nombre del producto nose</p>
+      <h1>
+        Eslogan <br />
+        bonito <br />
+        xddd
+      </h1>
+      <a href="#nosotros" class="btn-dark">Conoce más!</a>
+    </div>
+    <div class="hero-right">
+      <img src="/assets/aeiou.jpg" alt="Hero image" />
+    </div>
+  </section>
+
+  <!-- Presentación de empresa/producto -->
+  <section id="nosotros" class="section fade-in">
+    <div class="container">
+      <h2>¿Quiénes somos?</h2>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. In repellendus hic aliquam ut assumenda. Officiis debitis voluptatibus a corporis possimus reprehenderit in hic numquam pariatur consectetur quidem, ab animi sint.</p>
+    </div>
+  </section>
+
+  <!-- Tipos -->
+  <section id="tipos" class="section alt fade-in">
+    <div class="container">
+      <h2>Tipos de productos</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Tipo 1</h3>
+          <p>Descripcion</p>
+        </div>
+        <div class="card">
+          <h3>Tipo 2</h3>
+          <p>Descripcion</p>
+        </div>
+        <div class="card">
+          <h3>Tipo 3</h3>
+          <p>Descripcion</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ventajas -->
+  <section id="ventajas" class="section fade-in">
+    <div class="container">
+      <h2>¿Por qué elegirnos ante la competencia?</h2>
+      <ul class="ventajas">
+        <li>✔ Bonito</li>
+        <li>✔ Alta calidad</li>
+        <li>✔ :v</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Proceso -->
+  <section id="proceso" class="section alt fade-in">
+    <div class="container">
+      <h2>Nuestro proceso</h2>
+      <div class="pasos">
+        <div>1. Venta</div>
+        <div>2. Algo</div>
+        <div>3. Envío</div>
+        <div>4. Felicidad xd</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección compra -->
+  <section class="section fade-in compra">
+    <div class="container">
+      <h2>¿Listo para comprar?</h2>
+      <p>Continua a la compra del producto aquí</p>
+      <a href="#" class="btn">Comprar</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2026 Modelo</p>
+  </footer>
+
+</body>
+</html>
