@@ -2,110 +2,226 @@
 import '../css/styles.css';
 ---
 <!DOCTYPE html>
-</html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Landing Page</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <!-- Navbar estatico -->
+
+  <!-- Navbar -->
   <nav class="navbar">
     <div class="logo">Página demo</div>
     <ul class="nav-links">
       <li><a href="#inicio">Inicio</a></li>
       <li><a href="#nosotros">Nosotros</a></li>
-      <li><a href="#tipos">Tipo</a></li>
-      <li><a href="#ventajas">Beneficios</a></li>
-      <li><a href="#proceso">Proceso</a></li>
+      <li><a href="#tipos">Productos</a></li>
+      <li><a href="#resenas">Reseñas</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="#contacto">Contacto</a></li>
     </ul>
+    <div class="nav-actions">
+    <a href="#" class="login">Iniciar sesión</a>
+    <a href="#" class="register">Registrarme</a>
+  </div>
   </nav>
 
-  <!-- Seccion heroe -->
   <section id="inicio" class="hero">
-    <div class="hero-left fade-in">
-      <p class="subtitle">Nombre del producto nose</p>
-      <h1>
-        Eslogan <br />
-        bonito <br />
-        xddd
-      </h1>
-      <a href="#nosotros" class="btn-dark">Conoce más!</a>
-    </div>
-    <div class="hero-right">
-      <img src="/assets/aeiou.jpg" alt="Hero image" />
-    </div>
-  </section>
+  <div class="hero-left fade-in">
 
-  <!-- Presentación de empresa/producto -->
+    <h1>
+      El producto de tus sueños, eslogan y tal. <br />
+    </h1>
+
+    <p class="hero-desc">
+      Elegimos el producto especifico?
+    </p>
+
+    <p class="hero-small">
+      No me acuerdo. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga itaque, magni omnis iste unde tempore enim laborum earum deserunt! Mollitia, optio repellat. Numquam dolorem, aliquid nam modi atque recusandae quasi.
+    </p>
+
+    <a href="#tipos" class="btn-primary">Ver productos</a>
+  </div>
+
+  <div class="hero-right">
+    <img src="/assets/aeiou.jpg" alt="Hero image" />
+  </div>
+</section>
+
+  <!-- Nosotros-->
   <section id="nosotros" class="section fade-in">
     <div class="container">
       <h2>¿Quiénes somos?</h2>
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. In repellendus hic aliquam ut assumenda. Officiis debitis voluptatibus a corporis possimus reprehenderit in hic numquam pariatur consectetur quidem, ab animi sint.</p>
+      <p>
+        Somos una marca enfocada en ofrecer productos de alta calidad con diseño moderno,
+        pensados para mejorar tu experiencia diaria.
+      </p>
     </div>
   </section>
 
-  <!-- Tipos -->
+  <!-- Productos -->
   <section id="tipos" class="section alt fade-in">
     <div class="container">
-      <h2>Tipos de productos</h2>
+      <h2>Nuestros productos</h2>
       <div class="cards">
         <div class="card">
-          <h3>Tipo 1</h3>
-          <p>Descripcion</p>
+          <span class="etiqueta popular">Más popular</span>
+          <img src="/assets/aeiou.jpg" />
+          <h3>Producto 1</h3>
+          <p>Descripción breve</p>
+          <a href="#" class="buy-btn">Comprar por S/ 50</a>
         </div>
         <div class="card">
-          <h3>Tipo 2</h3>
-          <p>Descripcion</p>
+          <span class="etiqueta stock">¡Quedan pocos!</span>
+          <img src="/assets/aeiou.jpg" />
+          <h3>Producto 2</h3>
+          <p>Descripción breve</p>
+          <a href="#" class="buy-btn">Comprar por S/ 70</a>
         </div>
         <div class="card">
-          <h3>Tipo 3</h3>
-          <p>Descripcion</p>
+          <img src="/assets/aeiou.jpg" />
+          <h3>Producto 3</h3>
+          <p>Descripción breve</p>
+          <a href="#" class="buy-btn">Comprar por S/ 90</a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Ventajas -->
-  <section id="ventajas" class="section fade-in">
+  <!-- Reseñas -->
+  <section id="reseñas" class="reviews-section fade-in">
     <div class="container">
-      <h2>¿Por qué elegirnos ante la competencia?</h2>
-      <ul class="ventajas">
-        <li>✔ Bonito</li>
-        <li>✔ Alta calidad</li>
-        <li>✔ :v</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- Proceso -->
-  <section id="proceso" class="section alt fade-in">
-    <div class="container">
-      <h2>Nuestro proceso</h2>
-      <div class="pasos">
-        <div>1. Venta</div>
-        <div>2. Algo</div>
-        <div>3. Envío</div>
-        <div>4. Felicidad xd</div>
+      <h2 class="reviews-title">Lo que dicen nuestros clientes</h2>
+      <div class="reviews">
+        <div class="review-card">
+          <div class="stars">★★★★★</div>
+            <p>El producto superó mis expectativas. La calidad es increíble y el diseño es muy moderno. Totalmente recomendado.</p>
+            <h4>— Carlos Ramírez</h4>
+        </div>
+        <div class="review-card">
+          <div class="stars">★★★★★</div>
+            <p>Muy fácil de usar y realmente útil en el día a día. Sin duda volvería a comprar.</p>
+            <h4>— Mariana López</h4>
+        </div>
+        <div class="review-card">
+          <div class="stars">★★★★☆</div>
+            <p>Me gustó mucho el producto, cumple con lo prometido y llegó rápido. Excelente servicio.</p>
+            <h4>— José Pérez</h4>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Sección compra -->
-  <section class="section fade-in compra">
+  <!-- FAQ -->
+  <section id="faq" class="faq-section fade-in">
+    <div class="container">
+      <h2 class="faq-title">Preguntas frecuentes</h2>
+      <div class="faq-list">
+        <details>
+          <summary>¿El producto tiene garantía?</summary>
+          <p>Sí, ofrecemos una garantía de 1 año por defectos de fábrica.</p>
+        </details>
+        <details>
+          <summary>¿Cómo es la calidad del producto?</summary>
+          <p>Utilizamos materiales de alta calidad y realizamos pruebas para asegurar durabilidad.</p>
+        </details>
+        <details>
+          <summary>¿Cuánto tarda el envío?</summary>
+          <p>El envío tarda entre 2 a 5 días hábiles dependiendo de tu ubicación.</p>
+        </details>
+        <details>
+          <summary>¿Puedo devolver el producto?</summary>
+          <p>Sí, tienes hasta 7 días para solicitar una devolución.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!--Contacto-->
+  <section id="contacto" class="contact-section fade-in">
+    <div class="container contacto">
+      <div class="contact-info">
+        <h2>Contáctanos</h2>
+        <p>Estamos aquí para ayudarte. Escríbenos o contáctanos directamente.</p>
+      <div class="info-cards">
+        <div class="info-card">
+          <h4>📧 Email</h4>
+          <p>contacto@demo.com</p>
+        </div>
+        <div class="info-card">
+          <h4>📱 Teléfono</h4>
+          <p>+51 999 999 999</p>
+        </div>
+        <div class="info-card">
+          <h4>📍 Ubicación</h4>
+          <p>Lima, Perú</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Formulario -->
+    <div class="contact-form">
+      <form>
+        <div class="input-group">
+          <input type="text" placeholder="Nombre" required />
+          <input type="email" placeholder="Correo" required />
+        </div>
+        <div class="input-group">
+          <input type="tel" placeholder="Teléfono" />
+          <input type="text" placeholder="Asunto" />
+        </div>
+          <textarea placeholder="Mensaje"></textarea>
+          <button type="submit">Enviar mensaje</button>
+      </form>
+    </div>
+    </div>
+  </section>
+
+  <!--final -->
+  <section class="section compra fade-in">
     <div class="container">
       <h2>¿Listo para comprar?</h2>
-      <p>Continua a la compra del producto aquí</p>
+      <p>Empieza ahora mismo</p>
       <a href="#" class="btn">Comprar</a>
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer>
-    <p>© 2026 Modelo</p>
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-marca">
+        <h3>MiProducto</h3>
+        <p>Soluciones modernas para mejorar tu día a día.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Enlaces</h4>
+        <a href="#">Inicio</a>
+        <a href="#">Productos</a>
+        <a href="#">Contacto</a>
+      </div>
+      <div class="footer-links">
+        <h4>Legal</h4>
+        <a href="#">Términos y condiciones</a>
+        <a href="#">Política de privacidad</a>
+        <a href="#">Aviso legal</a>
+      </div>
+      <div class="footer-social">
+        <h4>Síguenos</h4>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 MiProducto. Todos los derechos reservados.</p>
+    </div>
   </footer>
 
 </body>
